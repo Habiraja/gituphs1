@@ -1,0 +1,31 @@
+public class InstaUser{	
+	String name;
+	String passwordOfInsta;
+	long phoneNum;
+	String emailId;
+	String emailIdPassword;
+	void setValues(String name, String passwordOfInsta, long phoneNum, String emailId, String emailIdPassword){
+		this.name = name;
+		this.passwordOfInsta = passwordOfInsta;
+		this.phoneNum = phoneNum;
+		this.emailId = emailId;
+		this.emailIdPassword = emailIdPassword;
+		
+	}
+	String getName(){
+		return this.name;
+	}
+	String getPasswordOfInsta(){
+		return this.passwordOfInsta;
+	}
+	long getPhoneNum(){
+		return this.phoneNum;
+	}
+	String getEmailId(){
+		return this.emailId;
+	}
+	String getEmailIdPassword(){
+		return this.emailIdPassword;
+	}
+		
+}
