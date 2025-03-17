@@ -19,7 +19,8 @@ public class DynamicArray {
             System.out.println("10. Get value");
             System.out.println("11. All clear");
             System.out.println("12. Contains");
-            System.out.println("13. Exit");
+            System.out.println("13. Update the Array");
+            System.out.println("14. Exit");
             System.out.println("Enter your choice");
             int choice = scan.nextInt();
             switch (choice) {
@@ -76,6 +77,12 @@ public class DynamicArray {
                     objDemoArray.contains(val);
                     break;
                 case 13:
+                    System.out.println("Enter the index");
+                    pos = scan.nextInt();
+                    System.out.println("Enter the Number");
+                    val = scan.nextInt();
+                    objDemoArray.updateTheArray(pos, val);
+                case 14:
                     System.exit(0);
         
                 default:

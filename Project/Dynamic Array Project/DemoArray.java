@@ -131,7 +131,7 @@ public class DemoArray {
             System.out.println("Array has no numbers");
             return;
         }
-        else if(pos<size){
+        else if((pos>0) && (pos<size)){
             System.out.println(pos +" index --> value is " +arr[pos]);
             return;
         }
@@ -153,6 +153,17 @@ public class DemoArray {
             }
         }
         System.out.println("Number is not contains in the array");
+    }
+    public void updateTheArray(int pos, int val){
+        if(size == 0){
+            System.out.println("Array has no numbers");
+            return;
+        }
+        if((pos>0) && (pos<size)){
+            arr[pos] = val;
+            return;
+        }
+        System.out.println("Enter the correct position");
     }
 }
 
